@@ -1,0 +1,199 @@
+﻿/* ========== GLOBAL ========== */
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* ========== BUTTONS ========== */
+button {
+    font-family: inherit;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+    .btn:hover {
+        background-color: #1e4fd7;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .btn:active {
+        transform: scale(0.97);
+    }
+
+
+
+
+
+/* ========== LABELS ========== */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+
+/* ========== TEXTBOX / INPUT ========== */
+input[type="text"],
+input[type="password"],
+input[type="username"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    }
+
+
+.input-validation-error {
+    border-color: #dc2626;
+}
+
+.field-validation-error {
+    color: #dc2626;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+
+table th,
+table td {
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+    color: #374151;
+}
+
+table tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+    .table tr:last-child {
+        border-bottom: none;
+    }
+
+table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+
+.table-container {
+    max-height: 400px; 
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+
+
+/* ========== DROPDOWN / SELECT ========== */
+select {
+    width: 100%;
+    padding: 10px 40px 10px 12px; /* space for arrow */
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    /* Remove default browser styling */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Custom arrow */
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%236b7280' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+    select:hover {
+        border-color: #9ca3af;
+    }
+
+    select:focus {
+        outline: none;
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    }
+
+    /* Disabled dropdown */
+    select:disabled {
+        background-color: #f3f4f6;
+        color: #9ca3af;
+        cursor: not-allowed;
+    }
+
+    /* ASP.NET validation error */
+    select.input-validation-error {
+        border-color: #dc2626;
+    }
+
+
+
+/* ========== CARDS / DASHBOARD ========== */
+#dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+/* ========== FORM SPACING HELPER ========== */
+.form-group {
+    margin-bottom: 16px;
+}

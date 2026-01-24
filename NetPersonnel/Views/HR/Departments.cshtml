@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@section Scripts {
+    <script src="~/js/departments.js"></script>
+}
+@{
+<body>
+        <button id="btnOpenAddDialog">Add</button>
+        <div class="table-container">
+        <table id="tblDepartments" border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Department Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows loaded by JS -->
+            </tbody>
+        </table>
+        </div>
+        <dialog id="dlgAdd"></dialog>
+        <dialog id="dlgEdit"></dialog>
+</body>
+}

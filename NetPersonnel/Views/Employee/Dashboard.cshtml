@@ -1,0 +1,11 @@
+﻿@using System.Security.Claims
+@section Scripts
+{
+    <script src="~/js/dashboard.js"></script>
+}
+@{
+    <body data-role="@User.FindFirst(ClaimTypes.Role).Value">
+    <div id="dashboard">
+    </div>
+    </body>
+}
